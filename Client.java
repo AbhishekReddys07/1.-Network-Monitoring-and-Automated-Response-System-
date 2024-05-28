@@ -64,8 +64,7 @@ public class Client {
     }
 
     public static void main(String[] args) {
-        String[] servers = { "10.206.34.154", "10.206.36.202",
-                "192.168.160.125", "10.113.195.139", "10.206.37.143", "10.206.42.221" };
+        String[] servers = { "please enter ip address or pull from file/DB" };
 
         ArrayList<String> successfulConnections = new ArrayList<>();
         ArrayList<String> unsuccessfulConnections = new ArrayList<>();
