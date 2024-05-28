@@ -49,10 +49,10 @@ class Server:
         '''
         This function helps to check log file to run timer script 
         '''
-        search_string = b""
-        search_string2 = b""
-        file_path = ""
-        file_path1 = ""
+        search_string = b"please enter a string"
+        search_string2 = b"please enter a string"
+        file_path = "please enter a file path"
+        file_path1 = "please enter a file path"
         attempt = 0
         while attempt < 10:
             try:
