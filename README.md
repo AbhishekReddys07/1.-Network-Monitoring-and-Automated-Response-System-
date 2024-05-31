@@ -1,4 +1,4 @@
-Note: not all the logic and additional functions are integrated with the server.py and Client.py, basically it's a baseline code, please check the below content to get an idea/Overview.
+Note: not all the logic and additional functions are not integrated with the server.py and Client.py, basically it's a baseline code, please check the below content to get an idea/Overview.
 
 How It Works: 
 
