@@ -22,5 +22,5 @@ Based on the log file analysis, the function decides whether to execute the time
 
 5. Executing the Timer Script:
 
-If the conditions for running the timer script are satisfied, the function initiates the timer script. This could be done by calling another function, executing a shell command, or triggering a timer event in the application.
+If the conditions for running the timer ,This could be done by calling another function, executing a shell command, or triggering a timer event in the application.
 
