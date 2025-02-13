@@ -1,37 +1,48 @@
-# Network Monitoring and Automated Response System
+# Network Monitoring and Automated Response System  
 
-This project implements a robust network monitoring and automated response system using Python. The system continuously monitors network activity, detects potential issues or anomalies, and triggers predefined actions based on specific events.
+This project implements a **network monitoring and automated response system** using **Java (Client) and Python (Server)**. The system continuously monitors network activity, detects potential issues, and triggers predefined actions.  
 
-**Key Features:**
+## **Key Features**  
 
-* Real-time network monitoring
-* Automated response mechanisms (e.g., alerts, service restarts)
-* Log file analysis for troubleshooting
-* Client-server architecture for efficient communication
-* Cross-platform compatibility
+- **Real-time network monitoring**  
+- **Automated alerts & responses** (e.g., log analysis, service restarts)  
+- **Client-server communication over TCP**  
+- **Generates a connection status report in HTML**  
+- **Cross-platform compatibility**  
 
-**Technologies Used:**
+## **Technologies Used**  
 
-* Python
-* Socket Programming
-* Multithreading
-* File Handling
-* System Interaction
+- **Java (Client):** Socket programming, multithreading, logging  
+- **Python (Server):** Socket programming, threading, file handling  
 
-**How to Run:**
+## **Project Structure**  
+/network-monitoring-system │── mainScripts/ │ ├── Client.java # Java client to connect to multiple servers │── server.py # Python server for network monitoring │── README.md # Project documentation
 
-1. **Install required libraries:** 
+
+## **Setup & Usage**  
+
+### **1. Run the Python Server**  
+
+1. Install dependencies (if required):  
    ```bash
    pip install -r requirements.txt
-2.**Configure the server:**
-   Modify the server.py script with appropriate server settings (host, port).
-   Configure the log file paths and search strings as needed.
-3.**Run the server:**
-   Bash
+2. Start the server:
    python server.py
-4.**Run the client:**
-Modify the client.java templeate with the IP addresses of the servers to monitor.
-Run the client.java templeate.
+3. The server will listen on PORT 1050 for incoming client connections.
 
-Note: This is a simplified example. For production environments, consider implementing more robust error handling, logging, and security measures.
-Disclaimer: This project is provided for educational and demonstration purposes only. The author is not responsible for any unintended consequences or damages resulting from its use.
+### **2. Configure & Run the Java Client**
+1. Modify Client.java to specify target server IPs:
+  String[] servers = { "192.168.1.10", "192.168.1.20" };
+2. Compile and run the client:
+  javac mainScripts/Client.java
+  java mainScripts.Client
+3. The client will attempt to connect to the servers and generate an HTML report (connections.html) listing successful and failed connections.
+
+### **3. 3. View Connection Status Report**
+   After running the client, an HTML report (connections.html) is generated. It can be opened manually or automatically in Google Chrome.
+
+   ***Additional Notes***
+The system checks for log file patterns (configurable in server.py).
+Connection status is updated every 3 hours.
+The system may shut down the machine if a critical condition is met (see shutdown_pc() in server.py).
+⚠️ Disclaimer: This project is for educational purposes only. Use responsibly.
