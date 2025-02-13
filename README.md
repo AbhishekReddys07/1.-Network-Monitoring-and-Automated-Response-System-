@@ -38,7 +38,7 @@ This project implements a **network monitoring and automated response system** u
   java mainScripts.Client
 3. The client will attempt to connect to the servers and generate an HTML report (connections.html) listing successful and failed connections.
 
-### **3. 3. View Connection Status Report**
+### **3. View Connection Status Report**
    After running the client, an HTML report (connections.html) is generated. It can be opened manually or automatically in Google Chrome.
 
    ***Additional Notes***
