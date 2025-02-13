@@ -1,26 +1,31 @@
-Note: not all the logic and additional functions are not integrated with the server.py and Client.py, basically it's a baseline code, please check the below content to get an idea/Overview.
+# Network Monitoring and Automated Response System
 
-How It Works: 
+This project implements a robust network monitoring and automated response system using Python. The system continuously monitors network activity, detects potential issues or anomalies, and triggers predefined actions based on specific events.
 
-1. File Handling:
-The function opens and reads a specified log file. This could be a text file where log entries are recorded or in progress.
-if the equivalent string is found the timer script will start in a new thread and check the logs every three hours until 3 days.  
+**Key Features:**
 
-2.Log File Parsing:
+* Real-time network monitoring
+* Automated response mechanisms (e.g., alerts, service restarts)
+* Log file analysis for troubleshooting
+* Client-server architecture for efficient communication
+* Cross-platform compatibility
 
-It iterates through the log file line by line, looking for specific patterns or keywords that indicate whether the timer script should run.
-This might involve searching for error messages, timestamps, or specific event markers that trigger the timer or stop.
+**Technologies Used:**
 
-3. Condition Checking:
+* Python
+* Socket Programming
+* Multithreading
+* File Handling
+* System Interaction
 
-The function checks each line against predefined conditions. If a line matches the criteria (e.g., an error code, a specific event, or a threshold being exceeded), the function sets a flag or triggers an action.
-If the conditions are met, the function prepares to initiate the timer script.
+**How to Run:**
 
-4. Decision Making:
-
-Based on the log file analysis, the function decides whether to execute the timer script. This decision could be as simple as returning a boolean value (True for run, False for don't run)or involve more complex logic to determine the script's parameters.
-
-5. Executing the Timer Script:
-
-If the conditions for running the timer ,This could be done by calling another function, executing a shell command, or triggering a timer event in the application.
-
+1. **Install required libraries:** 
+   ```bash
+   pip install -r requirements.txt
+2.**Configure the server:**
+   Modify the server.py script with appropriate server settings (host, port).
+   Configure the log file paths and search strings as needed.
+3.**Run the server:**
+   Bash
+   python server.py
