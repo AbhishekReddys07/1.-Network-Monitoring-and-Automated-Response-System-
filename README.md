@@ -29,3 +29,9 @@ This project implements a robust network monitoring and automated response syste
 3.**Run the server:**
    Bash
    python server.py
+4.**Run the client:**
+Modify the client.java templeate with the IP addresses of the servers to monitor.
+Run the client.java templeate.
+
+Note: This is a simplified example. For production environments, consider implementing more robust error handling, logging, and security measures.
+Disclaimer: This project is provided for educational and demonstration purposes only. The author is not responsible for any unintended consequences or damages resulting from its use.
